@@ -8,10 +8,11 @@ class Quiz extends React.Component {
     this.state = { quiz_position: 1 }
   }
   render() {
-    return
+    return (
       <div>
         <div className="QuizQuestion">{quizData[1].intruction_text}</div>
-      </div>;
+      </div>
+    );
   }
 }
 
