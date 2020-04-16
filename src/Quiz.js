@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import QuizQuestions from './QuizQuestions.js';
+import QuizQuestion from './QuizQuestion.js';
 
 let quizData = require('./quiz_data.json');
 
@@ -11,7 +11,7 @@ class Quiz extends Component {
   render() {
     return (
       <div>
-        <QuizQuestions quiz_question={quizData.quiz_questions[this.props.quiz_position - 1]}/>
+        <QuizQuestion quiz_question={quizData.quiz_questions[this.props.quiz_position - 1]}/>
       </div>
     );
   }
